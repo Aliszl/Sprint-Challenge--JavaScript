@@ -26,6 +26,7 @@ console.log(consume("Mary", "Poppins", greeting)); // Hello Mary Poppins, nice t
 // Explain in your own words why nestedfunction can access the variable internal.
 
 // Explanation: 
+// nestedFunction is in the same local function scope as the#at in which the variable is declared.
 
 
 const external = "I'm outside the function";
