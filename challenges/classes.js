@@ -30,7 +30,7 @@ class CuboidMaker {
         return this.length * this.width * this.height;
     }
     surfaceArea() {
-        return (this.length * this.width) + (this.length * this.height) + (this.width * this.height);
+        return (2*(this.length * this.width + this.length * this.height + this.width * this.height));
     }
 }
 
@@ -50,4 +50,4 @@ console.log(cuboid.surfaceArea()); // 130
 //         return `Try as I might I cant think of another ${cubeMethod}`,
 //     }
 // }
-// const babyCube = new CubeMaker (4,)4,4,some
+// const babyCube = new CubeMaker (4,4,4,some)
