@@ -40,7 +40,7 @@
 //   return this.length * this.width * this.height;
 // }
 // CuboidMaker.prototype.surfaceArea = function () {
-//   return (this.length * this.width) + (this.length * this.height) + (this.width * this.height);
+//   return (2 * (this.length * this.width + this.length * this.height + this.width * this.height));
 
 // }
 // const cuboid = new CuboidMaker(4, 5, 5);
