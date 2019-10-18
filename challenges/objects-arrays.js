@@ -15,20 +15,48 @@
 // Using your dinosaur objects, log answers to these questions:
 
 // How much did tyrannosaurus weigh?
-console.log();
+
+let dinosaur1 = {
+  name: "tyrannosaurus",
+  diet: "carnivorous",
+  weightKg: 7000 ,
+  bodyLengthM: 12,
+  period: "Cretaceous",
+  speak: function(){
+    return `RAWERSRARARWERSARARARRRR!`;
+    }
+}
+
+
+let dinosaur2 = {
+  name: "stegosaurus",
+  diet: "herbivorous",
+  weightKg: 2000 ,
+  bodyLengthM: 9,
+  period: "Late Jurassic",
+}
+let dinosaur3 = {
+  name: "velociraptor",
+  diet: "carnivorous",
+  weightKg: 15,
+  bodyLengthM: 1.8,
+  period: "Late Cretaceous",
+}
+console.log(dinosaur1, dinosaur2, dinosaur3);
+
 
 // What was the diet of a velociraptor?
-console.log();
+console.log(dinosaur2.diet);
 
 // How long was a stegosaurus?
-console.log();
+console.log(`${dinosaur2.name} was ${dinosaur2.bodyLengthM} m long`);
 
 // What time period did tyrannosaurus live in?
-console.log();
+console.log(dinosaur1.period);
 
 
 // Create a new roar method for the tyrannosaurus.  When called, return "RAWERSRARARWERSARARARRRR!" Log the result.
-console.log();
+console.log(dinosaur1.speak());
 
 
 // ==== Arrays ====
