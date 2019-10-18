@@ -241,7 +241,8 @@ zooAnimals.forEach((currentItem) => {
   displayNames.push(`Name ${currentItem.animal_name}, Scientific: ${currentItem.scientific_name}`);
 
 });
-
+// console.log("Here");
+// console.log(zooAnimals);
 console.log(displayNames);
 
 /* Request 2: .map()

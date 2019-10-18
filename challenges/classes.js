@@ -30,24 +30,26 @@ class CuboidMaker {
         return this.length * this.width * this.height;
     }
     surfaceArea() {
-        return (2*(this.length * this.width + this.length * this.height + this.width * this.height));
+        return (2 * (this.length * this.width + this.length * this.height + this.width * this.height));
     }
 }
 
 const cuboid = new CuboidMaker(4, 5, 5);
 
 // Test your volume and surfaceArea methods by uncommenting the logs below:
-console.log(cuboid.volume()); // 100
-console.log(cuboid.surfaceArea()); // 130
+console.log(`volume = ${cuboid.volume()}`); // 100
+console.log(`surface area = ${cuboid.surfaceArea()}`); // 130
 
 // sub Class
-// class CubeMaker extends CuboidMaker{
-//     constructor(length, height, width, cubeMethod){
-//     super(length, height, width)
-//     this.cubeMethod = cubeMethod;
-//     }
-//     cubeMethod(){
-//         return `Try as I might I cant think of another ${cubeMethod}`,
-//     }
-// }
-// const babyCube = new CubeMaker (4,4,4,some)
+class CubeMaker extends CuboidMaker{
+    constructor(length){
+    super(length);
+    }
+    surface(){
+        return (6 * Math.pow(this.length, 2))
+
+    }
+}
+
+const babyCube = new CubeMaker (4);
+console.log(`surface area from sub class method = ${babyCube.surface()}`);
